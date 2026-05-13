@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  cs415-database:
+    build: ./
+    image: image-cs415-database
+    container_name: container-cs415-database
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - "5432:5432"
